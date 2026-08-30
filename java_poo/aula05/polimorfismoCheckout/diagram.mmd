@@ -1,0 +1,8 @@
+classDiagram
+    FormaPagamento <|-- PIX
+    FormaPagamento <|-- Cartao
+    FormaPagamento <|-- Boleto
+
+    class FormaPagamento {
+        <<abstract>>
+    }
