@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "exemplo08",
+    "slug": "snack-a0b51b69-bc8e-40f0-97fd-283f176cbab8",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "Exemplo didático e com falhas propositais para aula de uso de Interface gráfica com React Native;\n- Uso do Switch para navegação entre telas;\n- Uso do ScrollView manualmente.\n- Uso de FlatList e SectionList",
+    "plugins": [
+      "expo-asset"
+    ]
+  }
+}
