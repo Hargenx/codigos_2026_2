@@ -1,5 +1,3 @@
-# banco.py
-
 import sqlite3
 from pathlib import Path
 from typing import Any, ClassVar
