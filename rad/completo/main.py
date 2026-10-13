@@ -1,5 +1,3 @@
-# main.py
-
 from datetime import date
 
 from banco import BancoDeDados
