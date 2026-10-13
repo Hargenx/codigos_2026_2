@@ -30,10 +30,6 @@ def main() -> None:
     with BancoDeDados() as banco:
         banco.criar_tabelas()
 
-        # -----------------------------------------------------
-        # INSERT
-        # -----------------------------------------------------
-
         if banco.buscar_pessoa_por_cpf(
             pessoa1.cpf
         ) is None:
@@ -49,9 +45,6 @@ def main() -> None:
         ) is None:
             banco.inserir_veiculo(veiculo1)
 
-        # -----------------------------------------------------
-        # SELECT
-        # -----------------------------------------------------
 
         print("\nPESSOAS")
         print("-" * 50)
@@ -93,9 +86,6 @@ def main() -> None:
                 f"{veiculo.marca.nome}"
             )
 
-        # -----------------------------------------------------
-        # BUSCA POR CPF
-        # -----------------------------------------------------
 
         print("\nBUSCA POR CPF")
         print("-" * 50)
@@ -106,10 +96,6 @@ def main() -> None:
 
         if pessoa:
             print(pessoa)
-
-        # -----------------------------------------------------
-        # VEÍCULOS DE UMA PESSOA
-        # -----------------------------------------------------
 
         print("\nVEÍCULOS DA PESSOA")
         print("-" * 50)
@@ -125,10 +111,6 @@ def main() -> None:
                 f"{veiculo.marca.nome}"
             )
 
-        # -----------------------------------------------------
-        # UPDATE COMPLETO
-        # -----------------------------------------------------
-
         pessoa_atualizada = Pessoa(
             cpf="12345678900",
             nome="Raphael Mauricio",
@@ -140,22 +122,14 @@ def main() -> None:
             pessoa_atualizada
         )
 
-        # -----------------------------------------------------
-        # UPDATE DINÂMICO E SEGURO
-        # -----------------------------------------------------
-
         banco.atualizar_pessoa_campos(
             "12345678900",
             nome="Raphael M. S. de Jesus",
             oculos=True,
         )
 
-        # -----------------------------------------------------
-        # UPDATE VEÍCULO
-        # -----------------------------------------------------
-
         veiculo_atualizado = Veiculo(
-            placa="LRW1I27",
+            placa="VRM1X22",
             cor="Preto",
             proprietario=pessoa_atualizada,
             marca=marca1,
@@ -165,9 +139,6 @@ def main() -> None:
             veiculo_atualizado
         )
 
-        # -----------------------------------------------------
-        # ALTER TABLE
-        # -----------------------------------------------------
 
         banco.adicionar_coluna_motor()
 
@@ -180,7 +151,7 @@ def main() -> None:
         # possui uma chave estrangeira apontando para Pessoa.
         # -----------------------------------------------------
 
-        # banco.apagar_veiculo("LRW1I27")
+        # banco.apagar_veiculo("VRM1X22")
         # banco.apagar_pessoa("12345678900")
 
 
