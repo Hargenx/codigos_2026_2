@@ -1,0 +1,6 @@
+pandas>=3.0
+plotly>=6.0
+streamlit>=1.50
+dash>=3.0
+pytest>=8.0
+# pyspark>=4.0  # opcional: necessário apenas para spark_job.py
