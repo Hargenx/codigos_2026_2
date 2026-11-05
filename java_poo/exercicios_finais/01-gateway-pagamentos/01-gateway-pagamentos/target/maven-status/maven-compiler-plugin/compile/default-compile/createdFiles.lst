@@ -1,0 +1,6 @@
+com\fintech\pagamento\dao\PagamentoDAO.class
+com\fintech\pagamento\Main.class
+com\fintech\pagamento\model\Pagamento.class
+com\fintech\pagamento\model\PagamentoBoleto.class
+com\fintech\pagamento\model\PagamentoCartao.class
+com\fintech\pagamento\model\PagamentoPix.class
